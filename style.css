@@ -416,20 +416,22 @@ footer iframe {
 
 @media (max-width: 768px) {
     nav {
-        flex-wrap: wrap;
-        row-gap: 10px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav h1 {
+        font-size: 1.6rem;
+        text-align: center;
     }
 
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
-        width: 100%;
     }
 
-    nav h1 {
-        width: 100%;
-        text-align: center;
+    nav ul li a {
+        font-size: 14px;
     }
 }
-
