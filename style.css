@@ -5,12 +5,14 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     font-family: Poppins, sans-serif;
     line-height: 1.5;
     color: #333;
     background-color: #fdfdfd;
+    overflow-x: hidden;
 }
 
 .container {
@@ -42,12 +44,15 @@ header {
     padding: 10px 0;
     position: sticky;
     top: 0;
+    height: 64px;
+    padding: 0;
     z-index: 5000;
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 nav ul {
@@ -66,8 +71,8 @@ nav a:hover {
 
 #home {
     position: relative;
+    height: 90vh;
     display: flex;
-    min-height: calc(100svh - 64px);
     align-items: center;
     justify-content: center;
     color: #fff;
