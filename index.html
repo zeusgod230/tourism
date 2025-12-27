@@ -23,10 +23,10 @@
             <h1>ExploreWorld</h1>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#destination">Destination</a></li>
-                <li><a href="#destination">Package</a></li>
-                <li><a href="#destination">Testinomials</a></li>
-                <li><a href="#destination">Book Now</a></li>
+                <li><a href="#destinations">Destination</a></li>
+                <li><a href="#packages">Package</a></li>
+                <li><a href="#testimonials">Testinomials</a></li>
+                <li><a href="#booking">Book Now</a></li>
             </ul>
         </nav>
     </div>
@@ -41,7 +41,7 @@
            playsinline
     ></video>
     <div class="overlay"></div>
-    <div class="home-content container">
+    <div class="home-content">
         <h2>Discover Your Next Adventure</h2>
         <p>
             Explore breathtaking destinations around the world and create
@@ -61,20 +61,20 @@
         <h2 id="destinations-heading">Popular Destinations</h2>
         <div class="destinations-grid">
             <article class="destinations-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOigRX-4QDPo28cexLI-wvGWrQ0kbmW0hQLg&s" alt="Delhi"/>
-                <h5>Delhi, New Delhi</h5>
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=500&h=350&fit=crop" alt="Paris Eiffel Tower"/>
+                <h3>Paris, France</h3>
             </article>
             <article class="destinations-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOigRX-4QDPo28cexLI-wvGWrQ0kbmW0hQLg&s" alt="Delhi"/>
-                <h5>Delhi, New Delhi</h5>
+                <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=500&h=350&fit=crop" alt="London Bridge"/>
+                <h3>London, England</h3>
             </article>
             <article class="destinations-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOigRX-4QDPo28cexLI-wvGWrQ0kbmW0hQLg&s" alt="Delhi"/>
-                <h5>Delhi, New Delhi</h5>
+                <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=500&h=350&fit=crop" alt="Santorini Greece"/>
+                <h3>Santorini, Greece</h3>
             </article>
             <article class="destinations-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOigRX-4QDPo28cexLI-wvGWrQ0kbmW0hQLg&s" alt="Delhi"/>
-                <h5>Delhi, New Delhi</h5>
+                <img src="https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625?w=500&h=350&fit=crop" alt="Bali Temple"/>
+                <h3>Bali, Indonesia</h3>
             </article>
         </div>
     </div>
@@ -91,32 +91,66 @@
         <div class="packages-grid" role="listitem">
             <article class="packages" role="listitem">
                 <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN4aR7GiQixfC8jzALuEYK2llof-WoSuW85Q&s" alt="Europe scenic travel package"/>
-                <h3>Europe Explorer</h3>
-                <p>10 Days I Starting from $1200</p>
-                <button aria-label="Book Europe Explorer Package">Book Now</button>
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8caSoImzgdpi9AK2tyiMUaHv-9HGXf5QiQ&s"
+                        alt="Paris travel package" />
+                <h3>Paris, France</h3>
+                <p>10 Days | Starting from $1200</p>
+                <button onclick="sendBookingEmail('Paris, France', '$1200')">
+                    Book Now
+                </button>
             </article>
+
+            <article class="packages" role="listitem">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThZTv3VH_GEXLCLsQ2nzdS9_qdg6JGMACn2g&s" alt="Bali travel package" />
+                <h3>Bali Escape</h3>
+                <p>7 Days | Starting from $900</p>
+                <button onclick="sendBookingEmail('Bali Escape', '$900')">
+                    Book Now
+                </button>
+            </article>
+
+            <article class="packages" role="listitem">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQswPbFjy0T_UWOwtkL8bk-BjffrLR-lU85EQ&s" alt="Switzerland travel package" />
+                <h3>Swiss Alps Tour</h3>
+                <p>8 Days | Starting from $1500</p>
+                <button onclick="sendBookingEmail('Swiss Alps Tour', '$1500')">
+                    Book Now
+                </button>
+            </article>
+
             <article class="packages" role="listitem">
                 <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN4aR7GiQixfC8jzALuEYK2llof-WoSuW85Q&s" alt="Europe scenic travel package"/>
-                <h3>Europe Explorer</h3>
-                <p>10 Days I Starting from $1200</p>
-                <button aria-label="Book Europe Explorer Package">Book Now</button>
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV1w32yaP-KWYlyYKkDcSP5UFONmbKyCzm0w&s"
+                        alt="Dubai travel package" />
+                <h3>Dubai Luxury Trip</h3>
+                <p>5 Days | Starting from $1100</p>
+                <button onclick="sendBookingEmail('Dubai Luxury Trip', '$1100')">
+                    Book Now
+                </button>
             </article>
+
             <article class="packages" role="listitem">
                 <img
-                        src="https://d3jbu7vaxvlagf.cloudfront.net/small/v2/category_media/image_17243969217262.jpeg" alt="Europe scenic travel package"/>
-                <h3>Europe Explorer</h3>
-                <p>10 Days I Starting from $1200</p>
-                <button aria-label="Book Europe Explorer Package">Book Now</button>
+                        src="https://cdn.britannica.com/39/94539-050-FC08A496/View-Tokyo.jpg?w=400&h=300&c=crop" width="255"
+                        alt="Tokyo city travel package" />
+                <h3>Tokyo Highlights</h3>
+                <p>6 Days | Starting from $1300</p>
+                <button onclick="sendBookingEmail('Tokyo Highlights', '$1300')">
+                    Book Now
+                </button>
             </article>
+
             <article class="packages" role="listitem">
-                <img
-                        src="https://i.pinimg.com/236x/e9/bf/37/e9bf37af092c4611088a2427839a9c9f.jpg" alt="Europe scenic travel package"/>
-                <h3>Europe Explorer</h3>
-                <p>10 Days I Starting from $1200</p>
-                <button aria-label="Book Europe Explorer Package">Book Now</button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP_ERq5C96RGKBB1r8pxFyvr5XiR_ikPQu7w&s"alt="Maldives beach travel package" />
+                <h3>Maldives Island Retreat</h3>
+                <p>5 Days | Starting from $1800</p>
+                <button onclick="sendBookingEmail('Maldives Island Retreat', '$1800')">
+                    Book Now
+                </button>
             </article>
+
+
+
         </div>
     </div>
 </section>
@@ -130,30 +164,63 @@
         <h2 id="testimonials-heading">What Our Travelers Say</h2>
 
         <div class="testimonials-grid" role="list">
+
             <blockquote class="testimonial" role="listitem">
-                <i class="fa-solid fa-quote-left fa-2x"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <i class="fa-solid fa-quote-left fa-2x" aria-hidden="true"></i>
+                <p>
+                    The Paris trip was perfectly organized. Hotels, transport, and sightseeing
+                    were seamless. Felt premium without being overpriced.
+                </p>
                 <h4>- Anshraj Gupta</h4>
             </blockquote>
 
             <blockquote class="testimonial" role="listitem">
                 <i class="fa-solid fa-quote-left fa-2x" aria-hidden="true"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam error illum laborum neque nesciunt, nisi officia qui quisquam quos soluta?.</p>
-                <h4>- Anshraj Gupta</h4>
+                <p>
+                    Bali Escape was pure relaxation. Beaches, resorts, and local guides were
+                    amazing. I didn’t have to worry about anything.
+                </p>
+                <h4>- Riya Sharma</h4>
             </blockquote>
 
             <blockquote class="testimonial" role="listitem">
-                <i class="fa-solid fa-quote-left fa-2x"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <h4>- Anshraj Gupta</h4>
+                <i class="fa-solid fa-quote-left fa-2x" aria-hidden="true"></i>
+                <p>
+                    The Swiss Alps tour was breathtaking. Every day felt like a postcard.
+                    Highly recommend for nature lovers.
+                </p>
+                <h4>- Arjun Mehta</h4>
             </blockquote>
 
             <blockquote class="testimonial" role="listitem">
-            <i class="fa-solid fa-quote-left fa-2x"></i>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <h4>- Anshraj Gupta</h4>
+                <i class="fa-solid fa-quote-left fa-2x" aria-hidden="true"></i>
+                <p>
+                    Dubai Luxury Trip exceeded expectations. Great hotels, smooth transfers,
+                    and well-planned activities. Totally worth it.
+                </p>
+                <h4>- Neha Verma</h4>
             </blockquote>
+            <blockquote class="testimonial" role="listitem">
+                <i class="fa-solid fa-quote-left fa-2x" aria-hidden="true"></i>
+                <p>
+                    Everything was well planned from start to finish. Customer support was quick
+                    and helpful whenever we had questions during the trip.
+                </p>
+                <h4>- Kunal Singh</h4>
+            </blockquote>
+
+            <blockquote class="testimonial" role="listitem">
+                <i class="fa-solid fa-quote-left fa-2x" aria-hidden="true"></i>
+                <p>
+                    This was my first international trip, and the experience was stress-free.
+                    Clear communication and great itinerary planning made it memorable.
+                </p>
+                <h4>- Priya Patel</h4>
+            </blockquote>
+
+
         </div>
+
     </div>
 </section>
 
@@ -169,9 +236,9 @@
             Consectetur exercitationem ipsa nihil omnis veritatis!
         </p>
 
-        <form aria-label="booking-form">
+        <form aria-label="booking-form" onsubmit="handleFormSubmit(event)">
 
-            <label for="fullname">Full Name</label>
+        <label for="fullname">Full Name</label>
             <input type="text"
                    id="fullname"
                    name="fullname"
@@ -198,15 +265,62 @@
                       name="message"
                       placeholder="Enter your message"></textarea>
 
-            <button type="submit">Book Now</button>
+            <button onclick="sendBookingEmail('Europe Explorer', '$1200')">
+                Book Now
+            </button>
         </form>
     </div>
 </section>
-<footer>
-    <div>
-        <h2>Find US</h2>
-        <iframe title="ExploreWorld Office Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019835235083!2d-122.41941538468187!3d37.77492977975932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d9d7b8a3%3A0x47fca1f7b3b9b0e!2sTravel%20Agency!5e0!3m2!1sen!2sin!4v1680000000000" allowfullscreen="" loading="lazy"></iframe>
+
+<footer class="site-footer" role="contentinfo">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2 class="footer-logo">ExploreWorld</h2>
+            <p>
+                We make your travel dreams come true with handpicked destinations,
+                affordable packages, and seamless booking experiences.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fa-solid fa-envelope"></i> info@exploreworld.com</p>
+        </div>
+
+        <div class="footer-box map-container">
+            <h3>Find Us</h3>
+            <iframe
+                    title="here is our company located"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.08697485006!2d-122.41941548468187!3d37.77492957975932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d9d7b8a3%3A0x6bdb1d44b4d8a2b6!2sSan%20Francisco!5e0!3m2!1sen!2sin!4v1700000000000"
+                    width="100%"
+                    height="180"
+                    style="border:0; border-radius:8px;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
     </div>
+
+    <div class="footer-bottom">
+        © 2025 ExploreWorld. All Rights Reserved.
+    </div>
+
 </footer>
+<script src="script.js"> </script>
 </body>
 </html>
