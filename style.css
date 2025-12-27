@@ -71,7 +71,8 @@ nav a:hover {
 
 #home {
     position: relative;
-    height: 90vh;
+    min-height: calc(100svh - 64px);
+    min-height: calc(100vh - 64px); /* fallback */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +80,7 @@ nav a:hover {
     text-align: center;
     overflow: hidden;
 }
+
 
 .bg-video {
     position: absolute;
