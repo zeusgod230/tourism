@@ -448,7 +448,7 @@ footer iframe {
         display: flex;
     }
 }
-@media (min-width: 769px) {
+@media (min-width: 700px) {
     nav ul {
         display: flex !important;
         position: static;
@@ -456,3 +456,4 @@ footer iframe {
         gap: 24px;
     }
 }
+

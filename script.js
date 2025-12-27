@@ -1,16 +1,45 @@
-/* ===========================
-   MOBILE NAVBAR (PUBLIC SITE)
-   =========================== */
-
 document.addEventListener("DOMContentLoaded", () => {
     const menuBtn = document.querySelector(".menu-toggle");
     const navMenu = document.querySelector("nav ul");
+    const menuIcon = document.querySelector(".menu-toggle i");
+    const navLinks = document.querySelectorAll("nav ul a");
 
-    if (menuBtn && navMenu) {
-        menuBtn.addEventListener("click", () => {
-            navMenu.classList.toggle("show");
+    if (!menuBtn || !navMenu) return;
+
+    // Toggle menu
+    menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+
+        // Toggle icon ☰ ↔ ✖
+        if (menuIcon) {
+            menuIcon.classList.toggle("fa-bars");
+            menuIcon.classList.toggle("fa-xmark");
+        }
+    });
+
+    // Close menu when link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            navMenu.classList.remove("show");
+
+            if (menuIcon) {
+                menuIcon.classList.add("fa-bars");
+                menuIcon.classList.remove("fa-xmark");
+            }
         });
-    }
+    });
+
+    // Reset menu on resize (mobile → desktop)
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove("show");
+
+            if (menuIcon) {
+                menuIcon.classList.add("fa-bars");
+                menuIcon.classList.remove("fa-xmark");
+            }
+        }
+    });
 });
 
 /* ===========================
