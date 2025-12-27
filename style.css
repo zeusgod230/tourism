@@ -57,8 +57,6 @@ nav {
 
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 24px;
 }
 nav a {
     color: #fff;
@@ -417,12 +415,21 @@ footer iframe {
 }
 
 @media (max-width: 768px) {
-    .home-content h2 {
-        font-size: 1.8rem;
-        line-height: 1.2;
+    nav {
+        flex-wrap: wrap;
+        row-gap: 10px;
     }
 
-    .home-content p {
-        font-size: 0.95rem;
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    nav h1 {
+        width: 100%;
+        text-align: center;
     }
 }
+
