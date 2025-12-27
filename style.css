@@ -422,8 +422,6 @@ footer iframe {
     font-size: 24px;
     cursor: pointer;
 }
-
-/* Mobile */
 @media (max-width: 768px) {
     nav {
         position: relative;
@@ -448,5 +446,13 @@ footer iframe {
 
     nav ul.show {
         display: flex;
+    }
+}
+@media (min-width: 769px) {
+    nav ul {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        gap: 24px;
     }
 }
