@@ -66,8 +66,8 @@ nav a:hover {
 
 #home {
     position: relative;
-    height: 90vh;
     display: flex;
+    min-height: calc(100svh - 64px);
     align-items: center;
     justify-content: center;
     color: #fff;
