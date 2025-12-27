@@ -415,3 +415,14 @@ footer iframe {
     border-radius: 8px;
     border: none;
 }
+
+@media (max-width: 768px) {
+    .home-content h2 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .home-content p {
+        font-size: 0.95rem;
+    }
+}
