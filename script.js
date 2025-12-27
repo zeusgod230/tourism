@@ -1,3 +1,21 @@
+/* ===========================
+   MOBILE NAVBAR (PUBLIC SITE)
+   =========================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    if (menuBtn && navMenu) {
+        menuBtn.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    }
+});
+
+/* ===========================
+   PACKAGE EMAIL BUTTON
+   =========================== */
 
 function sendBookingEmail(packageName, price) {
     const email = 'info@exploreworld.com';
@@ -16,6 +34,10 @@ Thank you!`);
 
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 }
+
+/* ===========================
+   BOOKING FORM SUBMIT
+   =========================== */
 
 function handleFormSubmit(event) {
     event.preventDefault();
