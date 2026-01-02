@@ -13,6 +13,8 @@ body {
     color: #333;
     background-color: #fdfdfd;
     overflow-x: hidden;
+    padding-top: 64px;
+
 }
 
 .container {
@@ -38,21 +40,28 @@ body {
     color: #0e3959;
     transform: scale(1);
 }
+
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
     background-color: #0e3959;
     color: #fff;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    height: 64px;
-    padding: 0;
-    z-index: 5000;
+    z-index: 9999;
+
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 64px;
 }
 
 nav ul {
@@ -69,16 +78,15 @@ nav a:hover {
 
 #home {
     position: relative;
-    min-height: calc(100svh - 64px);
-    min-height: calc(100vh - 64px); /* fallback */
+    padding-top: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     text-align: center;
     overflow: hidden;
+    min-height: calc(100svh - 64px);
 }
-
 
 .bg-video {
     position: absolute;
@@ -89,6 +97,7 @@ nav a:hover {
     object-fit: cover;
     z-index: 1;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -127,12 +136,10 @@ nav a:hover {
     text-align: center;
 }
 
-
 section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    scroll-margin-top: 64px;
 }
+
 section .container {
     width: 100%;
     max-width: 1200px;
@@ -157,6 +164,7 @@ section .container {
     gap: 25px;
     justify-content: center;
 }
+
 .destinations-card {
     background: #fff;
     border-radius: 10px;
@@ -169,6 +177,7 @@ section .container {
     height: 250px;
     object-fit: cover;
 }
+
 .destinations-card h3 {
     padding: 15px;
     font-size: 1.4rem;
