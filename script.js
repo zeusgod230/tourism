@@ -61,10 +61,6 @@ Thank you!`);
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 }
 
-/* ===========================
-   BOOKING FORM SUBMIT
-   =========================== */
-
 function handleFormSubmit(event) {
     event.preventDefault();
 
