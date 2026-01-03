@@ -6,18 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!menuBtn || !navMenu) return;
 
-    // Toggle menu
     menuBtn.addEventListener("click", () => {
         navMenu.classList.toggle("show");
 
-        // Toggle icon ☰ ↔ ✖
         if (menuIcon) {
             menuIcon.classList.toggle("fa-bars");
             menuIcon.classList.toggle("fa-xmark");
         }
     });
 
-    // Close menu when link is clicked
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
             navMenu.classList.remove("show");
