@@ -23,24 +23,6 @@ body {
     padding: 0 20px;
 }
 
-/*.packages-grid button {*/
-/*    background: #0e3959;*/
-/*    color: #fff;*/
-/*    border: none;*/
-/*    padding: 6px 10px;*/
-/*    margin-bottom: 17px;*/
-/*    border-radius: 5px;*/
-/*    font-weight: 500;*/
-/*    cursor: pointer;*/
-/*    transition: background 0.3s ease, transform 0.3s ease;*/
-/*}*/
-
-/*.packages-grid button:hover {*/
-/*    background: #ffca28;*/
-/*    color: #0e3959;*/
-/*    transform: scale(1);*/
-/*}*/
-
 header {
     position: fixed;
     top: 0;
