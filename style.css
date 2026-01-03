@@ -393,50 +393,100 @@ section .container {
 
 
 #booking {
-    padding: 60px 0;
-    background: #fdfdfd;
+    padding: 100px 0;
+    background: linear-gradient(180deg, #ffffff, #f4f7fb);
 }
+
+#booking .container {
+    text-align: center;
+}
+
 #booking h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #0e3959;
-}
-#booking p {
-    text-align: center;
+    font-size: 2.6rem;
     margin-bottom: 20px;
+    color: #0e3959;
+    position: relative;
+    display: inline-block;
 }
+
+#booking h2::after {
+    content: "";
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #0e3959, #ffca28);
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+#booking p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* FORM CARD */
 form {
     max-width: 600px;
     margin: auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    text-align: left;
 }
+
+/* LABELS */
+form label {
+    font-weight: 500;
+    color: #0e3959;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* INPUTS */
 form input,
 form select,
 form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
     border: 1px solid #ccc;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #0e3959;
+    box-shadow: 0 0 0 3px rgba(14, 57, 89, 0.15);
+}
+
+/* BUTTON */
 form button {
-    background: #0e3959;
+    width: 100%;
+    background: linear-gradient(135deg, #0e3959, #133e63);
     color: #fff;
     border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
+    padding: 14px;
+    border-radius: 30px;
+    font-weight: 600;
     cursor: pointer;
-    font-weight: bold;
+    transition: all 0.35s ease;
 }
 
 form button:hover {
     background: #ffca28;
     color: #0e3959;
 }
+
 
 footer iframe {
     width: 100%;
